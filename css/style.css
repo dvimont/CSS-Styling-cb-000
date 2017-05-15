@@ -1,0 +1,59 @@
+/* CSS stylesheet accessed by all html pages in this project */
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script|Elsie+Swash+Caps');
+/*
+    Standard format for CSS entry:
+
+selector { property:value;... }
+*/
+
+/* Type selectors */
+p {
+    font-size: 1em; /* pixels are fixed; points "pt" are variable; "em" width of m character, dependend on font */
+    line-height: 1.5em;
+}
+
+figcaption {
+    /*
+    font-weight: normal;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    font-family: Georgia, "Times New Roman", serif;
+    */
+    font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;;
+    color: #F00; /* shorthand for #FF0000; */
+    text-align: right;
+}
+
+/* Class selectors */
+.milk-text { /* selects items with class="milk-text" */
+    font: bold 2.6em 'Elsie Swash Caps', cursive;
+    color:white;
+    text-shadow: 0 2px 3px #000;
+}
+
+/* ID selector (for a unique element in a page) */
+#logo { /* select if id="logo" */
+    background-color: aqua;
+}
+
+/* Descendent selector (specific descendents of specific element) */
+
+#logo h1 { /* select an h1 if inside <logo> */
+    font-family: 'Clicker Script', cursive;
+}
+#logo h2 { /* select an h2 if inside <logo> */
+    font-family: 'Elsie Swash Caps', cursive;
+}
+
+/* Pseudo selector -- (vary display depending upon item state) */
+#details a:link, #details a:visited {
+    color:black;
+    text-decoration: none;
+}
+#details a:hover {
+    color:black;
+    text-decoration: underline;
+}
+#details a:active {
+    color:red;
+}
